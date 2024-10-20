@@ -1,0 +1,71 @@
+
+@import './_config.scss';
+
+@import '_bgEffect.scss';
+@import '_updownBtn.scss';
+
+@import './header.scss';
+@import './home.scss';
+@import './about.scss';
+@import './skills.scss';
+@import './works.scss';
+@import './contacts.scss';
+
+
+
+
+body,html {
+   color: var(--bs-black);
+   font-size: 10px;
+   overflow-x:hidden;
+   -webkit-font-smoothing: antialiased;
+}
+
+body {
+   font-family: "Pretendard-Regular","Noto Sans KR", "NanumSquareRound", "Anton","Titan One", sans-serif, Arial;
+}
+
+button {
+   align-items: center;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   cursor:pointer;
+   font-weight:600;
+}
+#bgBox.mobile{
+   display:block;
+   width:100vw; height:100vh;
+   background-color:#000000aa;
+   position:fixed; top:0;left:0;
+}
+#blogContent{
+   width:100%;
+
+   & h3{
+      // position:relative;
+      color:var(--bs-info);
+   }
+   
+   & #hiMain{
+      & section{
+         font-size:1.3rem;
+         letter-spacing:2px;
+         padding:60px 0px 60px;
+         &:last-child{padding-bottom:0}
+      }
+   }
+}
+
+@media screen and (min-width:768px){
+   body,html {
+      font-size:12px;
+   }
+}
+
+@media screen and (min-width:1024px){
+   body,html {
+      font-size:16px;
+   }
+}
+

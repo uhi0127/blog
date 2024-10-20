@@ -1,0 +1,40 @@
+#blogContent{
+   & #hiMain{
+      & #hiHome{
+         width:100vw; 
+         height:400px;
+         background-size:cover;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position:relative;left:50%; transform:translateX(-50%);
+
+         & h2{
+            color:var(--bs-white);
+            font-weight:500;
+            font-size: clamp(3rem,9.8vw,8rem);
+            -webkit-text-stroke-width: 3px;
+            font-family: 'Titan One';
+
+            & p{
+               margin-left:5px;
+               position: relative;
+               top: 20px;
+               animation: jump .5s ease infinite alternate;
+               color: #FFF;
+               text-shadow: 0 1px 0 #ccc,
+                              0 2px 0 #ccc,
+                              0 3px 0 #ccc,
+                              0 4px 0 #ccc,
+                              0 5px 0 #ccc,
+                              0 6px 0 transparent,
+                              0 7px 0 transparent,
+                              0 8px 0 transparent,
+                              0 9px 0 transparent,
+                              0 10px 10px rgba(0, 0, 0, .4);
+            }
+         }
+      }
+   }
+}
+      

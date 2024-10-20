@@ -1,0 +1,179 @@
+@import './_reset.scss';
+@import './_colorList.scss';
+@font-face {
+   font-family: Pretendard-Regular;
+   font-style: normal;
+   font-weight: 400;
+   src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+   format("woff");
+}
+
+// Tac One
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+
+// Noto Sans Kr
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+// Titan One
+@import url('https://fonts.googleapis.com/css2?family=Tac+One&display=swap');
+
+// Anton
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+// NanumSquareRound
+@import url('https://webfontworld.github.io/NanumSquareRound/NanumSquareRound.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Anton&family=Noto+Sans+KR:wght@100..900&family=Tac+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+@mixin h3Css(){
+   font-size: 1.5rem;
+   position:relative;padding-left:50px;
+   &::before{
+      content:"";height:100%; width:30px;
+      position:absolute;left:0; top:50%; transform:translateY(-50%);
+      background:url('../img/8bun.png') no-repeat center; background-size:contain;
+   }
+}
+
+@mixin borderImage(){
+   border-image-slice: 92% 10% 74% 4%;
+   border-image-width: 40px 40px 40px 40px;
+   border-image-outset: 50px 50px 50px 50px;
+   border-image-repeat: repeat;
+   border-image-source:url("../img/bbbb.svg");
+   border-style:solid;
+}
+
+@keyframes escurecer {
+   0%   { top: 0; }
+   100% { top: 100%; }
+}
+
+@keyframes estrela {
+   0% {
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+   }
+   50% {
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+   }
+   100% {
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+   }
+}
+
+@keyframes estrelaDestacada {
+   0% {
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+   }
+   20% {
+      background-color: #FFC4C4;
+      box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+   }
+   80% {
+      background-color: #C4CFFF;
+      box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+   }
+   100% {
+      background-color: #FFFFFF;
+      box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+   }
+}
+
+@keyframes meteoroStyle1 {
+   0% { opacity: 0; right: 300px; top: 100px; }
+   30% { opacity: .3; }
+   60% { opacity: .3; }
+   100% { opacity: 0; right: 1000px; top: 600px; }
+}
+
+@keyframes meteoroStyle2 {
+   0% { opacity: 0; right: 700px; top: 100px; }
+   30% { opacity: 1; }
+   60% { opacity: 1; }
+   100% { opacity: 0; right: 1400px; top: 600px; }
+}
+
+@keyframes meteoroStyle3 {
+   0% { opacity: 0; right: 300px; top: 300px; }
+   30% { opacity: 1; }
+   60% { opacity: 1; }
+   100% { opacity: 0; right: 1000px; top: 800px; }
+}
+
+@keyframes meteoroStyle4 {
+   0% { opacity: 0; right: 700px; top: 300px; }
+   30% { opacity: 1; }
+   60% { opacity: 1; }
+   100% { opacity: 0; right: 1400px; top: 800px; }
+}
+
+@keyframes lua1 {
+   0%{
+      box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+   }
+   50% {
+      box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+   }
+   100% {
+      box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+   }
+}
+
+@keyframes lua2 {
+   0%{
+      box-shadow: 0 0 160px 0px #68290b, 0 0 30px -4px #68290b, 0 0 8px 2px rgba(104, 41, 11, 0.259);
+   }
+   50% {
+      box-shadow: 0 0 80px 0px #68290b, 0 0 30px -4px #68290b, 0 0 8px 2px rgba(104, 41, 11, 0.259);
+   }
+   100% {
+      box-shadow: 0 0 160px 0px #68290b, 0 0 30px -4px #68290b, 0 0 8px 2px rgba(104, 41, 11, 0.259);
+   }
+}
+
+@keyframes rotate {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+
+@mixin textInvisible(){
+   width:0;
+   height: 0;
+   font-size:0;
+   line-height:0;
+   text-indent: -9999em;
+   overflow:hidden;
+   position:absolute;
+   left: 0;
+   top: 0;
+};
+
+
+@keyframes moveX {
+   from{left:-300px}
+   to{left:calc(100% + 300px);}
+}
+
+@keyframes jump {
+   100% {
+      top: -10px;
+      text-shadow: 0 1px 0 #CCC,
+                  0 2px 0 #CCC,
+                  0 3px 0 #CCC,
+                  0 4px 0 #CCC,
+                  0 5px 0 #CCC,
+                  0 6px 0 #CCC,
+                  0 7px 0 #CCC,
+                  0 8px 0 #CCC,
+                  0 9px 0 #CCC,
+                  0 50px 25px rgba(0, 0, 0, .2);
+   }
+}

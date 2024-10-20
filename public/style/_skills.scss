@@ -1,0 +1,139 @@
+#blogContent{
+   & #hiMain{
+      & #hiSkills{
+         width:100%;
+         height:400px;
+         display:flex;
+         justify-content:center;
+         align-items:center;
+         & #skillRotate{
+            width:clamp(150px,50vw,350px); 
+            height:clamp(150px,50vw,350px); 
+            background: {
+               color :#68290b ;
+               image: url("../img/bgSun.png");
+               position: center;
+               size: 120%;
+            }
+            position:relative;
+
+            border-radius:50%;
+            & .skillInfoInner{
+               width:100%; 
+               height:100%;
+               display:flex;
+               justify-content:center;
+               align-items:center;
+               position:relative;
+               z-index:20;
+               & p{
+                  text-align:center;
+                  width:85%;
+                  text-wrap:balance;
+                  padding:0;
+                  color:var(--bs-white);
+                  font-size:2rem;
+               }
+            }
+
+            & .skillInfoBox{
+               width:100%; 
+               height:100%; 
+               display:flex;
+               // flex-wrap:wrap;
+               position:absolute;
+               inset:0;
+               & li{
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  // gap:30px;
+                  position:absolute;transform:translate(-50%,-50%);
+                  & .logo{
+                     width:clamp(50px,10vw,70px);
+                     height:clamp(50px,10vw,70px);
+
+                     background: {
+                        color:var(--bs-primary-bg-subtle);
+                        repeat : no-repeat;
+                        position:center;
+                        size:50%;
+                     }
+                     
+                     border-radius:50%;
+                     box-sizing:border-box;
+                     cursor:pointer;
+                  }
+                  &:first-child{
+                     & .logo{
+                        background-color:var(--bs-teal);
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width:768px){
+   #blogContent{
+      & #hiMain{
+         & #hiSkills{
+            width:100%;
+            height:500px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            & #skillRotate{
+               width:clamp(150px,50vw,350px); 
+               height:clamp(150px,50vw,350px); 
+               & .skillInfoInner{
+                  & p{
+                     padding:0;color:var(--bs-white);font-size:2rem;
+                  }
+               }
+   
+               & .skillInfoBox{
+                  & li{
+                     & .logo{
+                        width:clamp(60px,12vw,80px);
+                        height:clamp(60px,12vw,80px);
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+@media screen and (min-width:1024px){
+   #blogContent{
+      & #hiMain{
+         & #hiSkills{
+            height:700px;
+            & #skillRotate{
+               width:clamp(150px,50vw,350px); 
+               height:clamp(150px,50vw,350px); 
+               & .skillInfoInner{
+                  & p{
+                     padding:0;
+                     font-size:2rem;
+                  }
+               }
+   
+               & .skillInfoBox{
+                  & li{
+                     & .logo{
+                        width:clamp(80px,8vw,100px);
+                        height:clamp(80px,8vw,100px);
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+

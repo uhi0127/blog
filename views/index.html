@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="../public/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../public/img/favicons/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = yes">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="유흥일의 포트폴리오 사이트 입니다.">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../public/style/main.css">
+    <title>신입개발자 유흥일의 포트폴리오 입니다.</title>
+  </head>
+  <body>
+    <!-- activate when window.innerWidth less than 768 -->
+    <div id="bgBox"></div>
+    <!-- background -->
+    <div id="bgEffect">
+      <div class="noite"></div>
+      <div class="constelacao"></div>
+      <div class="lua">
+        <div class="textura"></div>
+      </div>
+      <div class="chuvaMeteoro"></div>
+      <div class="floresta"><img src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png"></div>
+    </div>
+    <!-- 오른쪽 상,하단 위아래 이동 버튼-->
+    <div id="updownBtn"></div>
+    <!-- Real Used Content-->
+    <div id="blogContent">
+      <!-- Header-->
+      <header class="hiHeader" id="hiHeader">
+        <h1><a href="#">BLOG</a></h1>
+        <button type="button" id="toggle"><span class="bar1"></span><span class="bar2"></span><span class="bar3"></span><span class="sr_only">전체메뉴</span></button>
+        <nav id="headerNav">
+          <ul></ul>
+        </nav>
+      </header>
+      <!-- Main Content-->
+      <main id="hiMain">
+        <!-- Home-->
+        <section id="hiHome">
+          <div id="titleBox">
+            <h2>
+              <p>HI YU's</p>
+              <p>PORTFOLIO</p>
+            </h2>
+          </div>
+        </section>
+        <!-- About-->
+        <section id="hiAbout">
+          <div class="picWrap">
+            <div class="pic"></div>
+          </div>
+          <article class="infoBox">
+            <div class="myInfo">
+              <h3>It's Me</h3>
+              <dl>
+                <dd class="name">유흥일</dd>
+                <dd class="birth">1991.01.27</dd>
+                <dd class="address">경기 안산시 상록구</dd>
+                <dd class="mail">yuhiforwork@gmail.com</dd>
+                <dd class="phone">010-9001-0276</dd>
+              </dl>
+            </div>
+            <div class="certificate">
+              <h3>Certificate</h3>
+              <dl>
+                <dt>2010.01.11</dt>
+                <dd>자동차 운전면허 1종보통</dd>
+                <dt>2016.06.10</dt>
+                <dd>컴퓨터 응용 밀링 기능사</dd>
+                <dt>2016.06.10</dt>
+                <dd>컴퓨터 응용 선반 기능사</dd>
+              </dl>
+            </div>
+          </article>
+        </section>
+        <!-- Skills-->
+        <section id="hiSkills">
+          <article id="skillRotate">
+            <div class="skillInfoInner">
+              <p> </p>
+            </div>
+            <ul class="skillInfoBox"></ul>
+          </article>
+        </section>
+        <!-- Works-->
+        <section id="hiWorks">
+          <div class="workBox_container">
+            <article id="workBox">
+              <ul class="workContainer" id="workContainer"></ul>
+            </article>
+            <article class="button_container"></article>
+          </div>
+        </section>
+        <!-- Contact-->
+        <section id="hiContact">
+          <div class="side"></div>
+        </section>
+      </main>
+    </div>
+    <script src="../public/js/main.mjs" type="module"></script>
+  </body>
+</html>

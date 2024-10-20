@@ -1,0 +1,108 @@
+doctype html
+html(lang="ko")
+   head
+      meta(charset="UTF-8")
+      link(rel="icon", type="image/png", sizes="32x32", href="../public/img/favicons/favicon-32x32.png")
+      link(rel="icon", type="image/png", sizes="16x16", href="../public/img/favicons/favicon-16x16.png")
+      meta(name="viewport", content="width=device-width,initial-scale=1, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = yes")
+      meta(name="theme-color", content="#ffffff")
+      meta(name="description", content="유흥일의 포트폴리오 사이트 입니다.")
+      link(rel="apple-touch-icon", sizes="180x180", href="./img/favicons/apple-touch-icon.png")
+      link(rel="preconnect",href="https://fonts.googleapis.com")
+      link(rel="preconnect",href="https://fonts.gstatic.com",crossorigin)
+      link(rel="stylesheet",href="../public/style/main.css")
+      title 신입개발자 유흥일의 포트폴리오 입니다.
+   body
+
+      // activate when window.innerWidth less than 768 
+      #bgBox
+      
+      // background 
+      #bgEffect
+         .noite
+         .constelacao
+         .lua: .textura
+         .chuvaMeteoro
+         .floresta: img(src="https://raw.githubusercontent.com/interaminense/starry-sky/master/src/img/bgTree.png")
+
+      // 오른쪽 상,하단 위아래 이동 버튼
+      #updownBtn
+      
+      
+      // Real Used Content
+      #blogContent
+         // Header
+         header#hiHeader.hiHeader
+            h1: a(href="#") BLOG
+
+            button(type="button")#toggle
+               span.bar1
+               span.bar2
+               span.bar3
+               span.sr_only 전체메뉴
+
+            nav#headerNav
+               ul
+            
+            //- // activate when window.innerWidth less than 768 
+            //- #bgBox
+
+         
+         // Main Content
+         main#hiMain
+            // Home
+            section#hiHome
+               #titleBox
+                  h2
+                     p HI YU's
+                     p PORTFOLIO
+            // About
+            section#hiAbout
+               .picWrap
+                  .pic
+                  
+               article.infoBox
+                  .myInfo
+                     h3 It's Me
+                     dl
+                        //- dt.name Name
+                        dd.name 유흥일
+                        //- dt.birth Birth
+                        dd.birth 1991.01.27
+                        //- dt.address Address
+                        dd.address 경기 안산시 상록구
+                        //- dt.mail E-mail
+                        dd.mail yuhiforwork@gmail.com
+                        //- dt.phone Cell phone
+                        dd.phone 010-9001-0276
+
+                  .certificate
+                     h3 Certificate
+                     dl
+                        dt 2010.01.11
+                        dd 자동차 운전면허 1종보통
+                        dt 2016.06.10
+                        dd 컴퓨터 응용 밀링 기능사
+                        dt 2016.06.10
+                        dd 컴퓨터 응용 선반 기능사
+
+            // Skills
+            section#hiSkills
+               article#skillRotate
+                  .skillInfoInner
+                     p 
+                  ul.skillInfoBox
+            
+            // Works
+            section#hiWorks
+               .workBox_container
+                  article#workBox
+                     ul#workContainer.workContainer
+                     
+                  article.button_container
+                     
+            // Contact
+            section#hiContact
+               .side
+      
+      script(src="../public/js/main.mjs",type="module")
